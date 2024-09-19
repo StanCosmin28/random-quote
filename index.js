@@ -1,5 +1,4 @@
-const url =
-  "https://cors-anywhere.herokuapp.com/http://api.quotable.io/random?tags=wisdom|success";
+const url = "http://api.quotable.io/random?tags=wisdom|success";
 const quote = document.getElementById("quote");
 const wrapper = document.querySelector(".wrapper");
 const btn = document.getElementById("btn");
@@ -10,14 +9,14 @@ function myQuote() {
     .then((response) => response.json())
     .then((data) => {
       getQuote(data.content);
-      console.log(data.author);
+      // console.log(data.author);
     })
     .catch((error) => console.error("Error:", error));
 }
 myQuote();
 function getQuote(data) {
   quote.innerText = data;
-  console.log(quote.innerText);
+  // console.log(quote.innerText);
   wrapper.classList.add("fade");
 }
 
