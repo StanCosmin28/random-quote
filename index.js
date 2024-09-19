@@ -1,4 +1,3 @@
-// const url = "https://api.chess.com/pub/player/cosmin3463";
 const url = "http://api.quotable.io/random?tags=wisdom|success";
 const quote = document.getElementById("quote");
 const wrapper = document.querySelector(".wrapper");
@@ -19,8 +18,6 @@ function getQuote(data) {
   quote.innerText = data;
   console.log(quote.innerText);
   wrapper.classList.add("fade");
-
-  // wrapper.classList.remove("fade");
 }
 
 btn.addEventListener("click", myQuote);

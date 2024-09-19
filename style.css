@@ -20,6 +20,10 @@ body {
   z-index: 2;
   filter: blur(2px);
 }
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 h1 {
   margin: 0 auto;
   color: whitesmoke;
@@ -33,6 +37,7 @@ h1 {
   width: 100%;
   position: absolute;
 }
+
 .container {
   z-index: 3;
   position: relative;
@@ -60,7 +65,7 @@ h1 {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.profile-img {
+.profile-img a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +76,7 @@ h1 {
   border-radius: 100%;
   margin-right: 10px;
 }
-.profile-img img {
+.profile-img a img {
   padding: 3px;
   width: auto;
   height: 100%;
@@ -132,27 +137,14 @@ p {
   padding: 12px 25px;
   border-radius: 5px;
   cursor: pointer;
-  outline: none;
   transition: 0.5s;
   z-index: 3;
 }
-
-#logo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-#logo img {
-  height: 100%;
-  width: 30px;
-  transition: 0.5s;
+button:hover {
+  scale: 105%;
+  border: 1px solid hsla(70, 66%, 52%);
 }
 
-#logo img:hover {
-  scale: 120%;
-  transition: 0.5s;
-}
 @media only screen and (min-width: 600px) {
   .wrapper {
     scale: 150%;
