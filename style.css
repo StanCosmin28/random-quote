@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: #15161a;
+  background-image: url("test2.jpg");
+  width: 100vw;
+  height: 100vh;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(70, 66%, 52%, 0.4);
+
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  filter: blur(2px);
+}
+h1 {
+  margin: 0 auto;
+  color: whitesmoke;
+  padding: 10px;
+  background-color: #15161a;
+  z-index: 3;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+}
+.container {
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 80vmin;
+  max-width: 350px;
+  height: auto;
+  margin: 20px;
+  opacity: 0;
+  padding: 18px;
+  background-color: #15161a;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px rgb(0, 0, 0);
+}
+.profile {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  min-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.profile-img img {
+  padding: 3px;
+  width: auto;
+  height: 100%;
+}
+.profile-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+h3 {
+  margin: 5px 0px;
+}
+#badge {
+  width: 16px;
+  position: absolute;
+  top: 8px;
+  left: 118px;
+}
+#username {
+  font-size: 12px;
+  opacity: 100%;
+  font-weight: 100;
+  opacity: 50%;
+}
+span {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+}
+p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 200;
+  word-wrap: break-word;
+  line-height: 18px;
+  margin-top: 16px;
+}
+.fade {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.btn-container {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+
+  display: flex;
+}
+.btn-container button {
+  margin: 0 auto;
+  background-color: #15161a;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+#logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#logo img {
+  height: 100%;
+  width: 30px;
+  transition: 0.5s;
+}
+
+#logo img:hover {
+  scale: 120%;
+  transition: 0.5s;
+}
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    scale: 150%;
+  }
+}
